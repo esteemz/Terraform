@@ -77,6 +77,6 @@ resource "aws_db_subnet_group" "Wordpress-db" {
 # Create an Elastic Beanstalk environment
 resource "aws_elastic_beanstalk_environment" "Wordpress" {
   name                = "Wordpress"
-  application         = "Wordpress"
+  application         = "Wordpress" # edit with file path for Wordpress app
   solution_stack_name = "64bit Amazon Linux 2 v5.4.0 running PHP 7.4"
   cname_prefix        =
